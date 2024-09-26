@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="../assets/logo.jfif" alt="Logo Website" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#portfolio">Portofolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="banner">
+      <div class="container">
+        <div class="slide active">
+          <img src="../assets/benner1.jpg" alt="Banner 1" />
+        </div>
+        <div class="slide">
+          <img src="../assets/benner2.jfif" alt="Banner 2" />
+        </div>
+        <div class="slide"></div>
+          <img src="../assets/benner3.jfif" alt="Banner 3" />
+        </div>
+        <!-- Tambahkan slide banner lainnya di sini -->
+      </div>
+    </section>
+
+    <section id="welcome">
+      <div class="container">
+        <h1>Hi Fahar Abdul Aziz, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+      </div>
+    </section>
+
+    <section id="headquarter">
+      <div class="container">
+        <h2>Our Headquarter</h2>
+        <div class="locations">
+          <div class="location">
+            <div class="circle"></div>
+            <p>Jakarta</p>
+          </div>
+          <div class="location">
+            <div class="circle"></div>
+            <p>Bandung</p>
+          </div>
+          <div class="location">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="message">
+      <div class="container">
+        <h2>Message Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div class="form-group">
+            <label for="tanggalLahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir" required />
+          </div>
+          <div class="form-group">
+            <label>Jenis Kelamin:</label>
+            <input
+              type="radio"
+              id="laki"
+              name="gender"
+              value="Laki-Laki"
+              required
+            />
+            <label for="laki">Laki-Laki</label>
+            <input
+              type="radio"
+              id="perempuan"
+              name="gender"
+              value="Perempuan"
+              required
+            />
+            <label for="perempuan">Perempuan</label>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan:</label>
+            <textarea id="pesan" name="pesan" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024. Fahar Abdul Aziz</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
